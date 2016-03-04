@@ -40,6 +40,7 @@ data by using the ggplot 2 package.
     plot(hist1)
 
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-3-1.png)<!-- -->
+
 Second, we caculate and plot the mean and median of the total steps per
 day. For now, we ignore missing values.
 
@@ -126,7 +127,7 @@ the mean and median total number of steps taken per day.
 Now let's compare the two histograms in a single plot. The old histogram
 is plotted in green colour and red border; whereas the new historgam is
 displayed dark gray color and black border. Overlapping areas will be
-shown as a dark grey.
+shown as a dark green.
 
     hist_compare <- ggplot(total1, aes(steps_total)) +
             geom_histogram(binwidth=2000, 
